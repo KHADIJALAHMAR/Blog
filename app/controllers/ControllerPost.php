@@ -1,5 +1,5 @@
 <?php
-  class Post extends Controller {
+  class ControllerPost extends Controller {
     public function __construct(){
      $this->model= $this->model('AdminPost');
     }
@@ -24,7 +24,7 @@
      
      ];
      $this->model->addPost($data);
-    header('location:'.URLROOT .'/Post/index');
+    header('location:'.URLROOT .'/ControllerPost/index');
    }
    
      $this->view('pages/insert');
@@ -35,7 +35,7 @@
        'id'=>$_GET['id']
      ];
     $this->model->deletPost($params); 
-       header('location:'.URLROOT.'/' . '/contact/index');
+       header('location:'.URLROOT.'/' . '/ControllerPost/index');
     // echo $_GET['id'];
    }
 
@@ -46,8 +46,7 @@
    if (isset($_POST["submit"]))
    {
      
-     
-    $params=[ 
+    $params=[                                                                                                                                 
    'id'=>$id,
    'titre' =>$_POST['titre'],
    'contexte' => $_POST['contexte'],

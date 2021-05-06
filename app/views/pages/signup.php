@@ -1,6 +1,6 @@
 <?php require APPROOT . '/views/inc/header.php'; ?>
 <body>
-<form action="<?php echo URLROOT; ?>/ControllerPost/insert" method="POST">
+<form action="<?php echo URLROOT; ?>/CreatCompte/" method="POST">
   <div class="form-row">
     <div class="col">
       <input type="text" class="form-control" name="titre" placeholder="titre">
