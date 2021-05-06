@@ -14,7 +14,17 @@ class AdminCreat{
     $exucute_data=$this->db->execute();
     return $exucute_data;
     }
-}
+    public function signup($email,$password)
+    {
+      $this->db->query("SELECT * FROM `admin`  WHERE email=:email passw_word=:pass_word");
+      $this->db->bind(':email', $email);
+      $this->db->bind(':passw_word', $password);
+
+      $results = $this->db-> single();
+
+      return $results;
+    }
+    } 
 
   
     
