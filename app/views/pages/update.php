@@ -15,7 +15,7 @@
   </div>
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">contexte</label>
-    <input type="text" class="form-control" name="contexte" value="<?php echo $data->contexte; ?>">
+    <textarea id="summernote" name="contexte" style="padding: 5px 5px 30px 10px;height: 200px;border-radius: 5px;outline: none;width: 76rem;border-color: #cacaca;"><?php echo $data->contexte; ?></textarea>
     </div>
   <button type="submit"  name="submit" class="btn btn-outline-success">Submit</button>
 </form>
