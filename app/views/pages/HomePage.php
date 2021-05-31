@@ -11,7 +11,7 @@
     <div class="card" style="max-width: 500px;">
         <div class="row no-gutters">
             <div class="col-sm-5" style="background: #868e96;">
-                <img src="img/h.webp" class="card-img-top h-100" alt="...">
+                <img src="public/img/h.webp" class="card-img-top h-100" alt="imageX">
             </div>
             <div class="col-sm-7">
                 <div class="card-body">
@@ -40,7 +40,6 @@
 <div class="d-flex justify-content-center flex-wrap">
 <?php $count=0; ?>
     <?php foreach ($data as $row):?>
-      
       <div class="card mx-sm-5 my-sm-3" >
       <img id="wow" src="public/img/<?php echo $row->image ?>" width= "20px"   height="300px "class="card-img-top">
       <div class="card-body" >
