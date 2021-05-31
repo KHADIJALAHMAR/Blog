@@ -3,19 +3,13 @@
 <?php if(isset($_SESSION['email'])){
 
 ?>
-<?php echo APPROOT2; ?>
-<header class="masthead" style="background-image: url('../public/img/blog.png')">
-    <div class="overlay"></div>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-md-10 mx-auto">
-                <div class="site-heading">
-                    <h1> My blog </h1>
-                    <span class="subheading">Roman d'alexandre</span>
-                </div>
-            </div>
-        </div>
-    </div>
+ <header>
+
+
+<div > 
+  <!-- style="background-image: url('../public/img/blog.png')"> -->
+  <video id="Mp4Video-1590159698427" class="myVideo1" src="../public/img/bgvideo2.mp4"  loop="" muted="muted" playsinline="" autoplay="" style="width: 99vw; opacity: 1;"></video>
+</div>
 </header>
 <!-- RS de roman -->
 <div class="d-flex justify-content-center">
