@@ -9,6 +9,10 @@
       <input type="text" class="form-control"  name="contexte" placeholder="contexte">
     </div>
     <div class="form-group">
+              <label for="">Image</label>
+              <input type="file"  name="image">
+      </div>
+    <div class="form-group">
         <input type="submit" class="btn btn-primary" value="enter" name="submit">
         </div>
   </div>
