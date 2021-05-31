@@ -36,3 +36,37 @@
       </form>
       <div class="text-red"><?php if(isset($errdata['error_search'])){ echo $errdata['error_search']; } ?></div>
       </div>
+       <!-- card des chapitre  -->
+<div class="d-flex justify-content-center flex-wrap">
+<?php $count=0; ?>
+    <?php foreach ($data as $row):?>
+      
+      <div class="card mx-sm-5 my-sm-3" >
+      <img id="wow" src="public/img/<?php echo $row->image ?>" width= "20px"   height="300px "class="card-img-top">
+      <div class="card-body" >
+        <h5 class="card-title"><?php echo $row->titre;?></h5>    
+                          <!--  Model button -->
+     <button id="myBtn" class="myBtn btn btn-outline-primary" data-toggle="modal" data-target="#<?php echo $count; ?>">view</button>
+                          <!-- Modal -->
+      <div class="modal fade" id="<?php echo $count ;?>">
+          <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                 <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                    <button type="button" style="width:5rem" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                   <div class="modal-body">
+                      <p class="card-text"><?php echo $row->contexte;?></p>
+                   </div>
+                        <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                              <button type="button" class="btn btn-primary">Understood</button>
+                        </div>
+              </div>
+          </div>
+      </div>
+        </div>
+      </div>
+    <?php $count++ ; ?>
+    <?php endforeach;?>
+</div>
