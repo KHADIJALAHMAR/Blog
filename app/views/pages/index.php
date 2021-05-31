@@ -43,8 +43,9 @@
       <div class="text-danger"><?php if(isset($errdata['error_search'])){ echo $errdata['error_search']; } ?></div>
       </div>
 <!-- icons insert -->
-<a href="<?php echo URLROOT; ?>/ControllerPost/insert"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"  margin-right="100"fill="currentColor" class="bi bi-plus-square-fill" viewBox="0 0 16 16" >
-  <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 4.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3a.5.5 0 0 1 1 0z"/>
+<div class="container-fluid row ">
+    <h2 class="col-11 text-light " class="text-danger">Articles</h2>
+    <a href="<?php echo URLROOT; ?>/ControllerPost/insert" class="col-1"><button type="button" name="ajouter" class="btn  btn-outline-primary">Ajouter <i class='fas fa-plus'></i></button></a>
 </svg></a>
 <div class="d-flex justify-content-center flex-wrap">
 <?php $var=0; ?>
