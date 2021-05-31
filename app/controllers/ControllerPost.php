@@ -6,13 +6,11 @@
     
     public function index(){
       
-      $data = [];
+      
       $result = $this->model->showPost();
      
-      foreach ($result as $row) {
-        array_push($data,$row);
-      }
-      $this->view('pages/index', $data);
+     
+      $this->view('pages/index', $result);
     }
 
    public function insert()

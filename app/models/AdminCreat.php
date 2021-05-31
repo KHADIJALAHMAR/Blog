@@ -16,11 +16,11 @@ class AdminCreat{
     }
     public function signup($email,$password)
     {
-      $this->db->query("SELECT * FROM `admin`  WHERE email=:email passw_word=:pass_word");
+      $this->db->query("SELECT * FROM `admin`  WHERE email=:email AND pass_word=:pass_word");
       $this->db->bind(':email', $email);
-      $this->db->bind(':passw_word', $password);
-
-      $results = $this->db-> single();
+      $this->db->bind(':pass_word', $password);
+     
+      $results = $this->db->single();
 
       return $results;
     }

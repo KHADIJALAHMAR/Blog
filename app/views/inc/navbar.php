@@ -17,7 +17,7 @@
         
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="<?php echo URLROOT; ?>/usersControllerPost/login">Logout</a>
+              <a class="nav-link" href="<?php echo URLROOT; ?>/ControllerCompte/logout">Logout</a>
             </li>
       </div>
     </div>

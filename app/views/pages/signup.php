@@ -1,12 +1,12 @@
 <?php require APPROOT . '/views/inc/header.php'; ?>
 <body>
-<form action="<?php echo URLROOT; ?>/CreatCompte/" method="POST">
+<form action="<?php echo URLROOT; ?>/ControllerCompte/login" method="POST">
   <div class="form-row">
     <div class="col">
-      <input type="text" class="form-control" name="titre" placeholder="titre">
+      <input type="text" class="form-control" name="email" placeholder="email">
     </div>
     <div class="col">
-      <input type="text" class="form-control"  name="contexte" placeholder="contexte">
+      <input type="password" class="form-control"  name="password" placeholder="password">
     </div>
     <div class="form-group">
         <input type="submit" class="btn btn-primary" value="enter" name="submit">

@@ -7,6 +7,7 @@
 
   // App Root
   define('APPROOT', dirname(dirname(__FILE__)));
+  define('APPROOT2', dirname(dirname(dirname(__FILE__))));
   // URL Root
   define('URLROOT', 'http://localhost/Blog');
   // Site Name

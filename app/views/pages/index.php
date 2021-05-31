@@ -1,5 +1,7 @@
 <?php include_once APPROOT . '/views/inc/header.php'; ?>
-<header class="masthead" style="background-image: url('https://miro.medium.com/max/6300/1*qrzHr2IGGJ5o-h7sdkyo-w.jpeg">
+
+<?php echo APPROOT2; ?>
+<header class="masthead" style="background-image: url('../public/img/blog.png')">
     <div class="overlay"></div>
     <div class="container">
         <div class="row">
@@ -17,7 +19,7 @@
 <div class="card mb-3-" style="max-width: 540px; " style="margin-auto">
     <div class="row g-0">
       <div class="col-md-4">
-        <img src="public/img/cov.jpg" alt="...">
+        <img src="../public/img/cov.jpg" alt="...">
       </div>
       <div class="col-md-8">
         <div class="card-body">
@@ -39,12 +41,12 @@
 <!-- card des chapitre  -->
     <?php foreach ($data as $row):?>
     <div class="d-flex justify-content-center">
-    <div class="card" style="width: 50vh   height:50 vh ">
-    <img src="public/img/imgchapitre.jpg"class="card-img-top" width=300vh height=300vh    alt="...">
+    <div class="card" style="width: 10vh   height:10 vh ">
+    <img src="../public/img/imageblog.webp"class="card-img-top" width=300vh height=300vh    alt="...">
    <div class="card-body" >
     <h5 class="card-title"><?php echo $row->titre;?></h5>
     
-    <!--  Model-->
+    <!--  Model button -->
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
   view
 </button>
@@ -78,6 +80,8 @@
     <?php endforeach;?>
     </div>
   </div> 
+
+  
   
 
 
