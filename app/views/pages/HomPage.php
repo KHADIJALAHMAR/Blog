@@ -70,3 +70,4 @@
     <?php $count++ ; ?>
     <?php endforeach;?>
 </div>
+<?php include_once APPROOT . '/views/inc/footer.php'; ?>
