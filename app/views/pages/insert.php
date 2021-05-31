@@ -18,5 +18,10 @@
   </div>
   <?php require APPROOT . '/views/inc/footer.php'; ?>
 </form>
+<script>
+     $(document).ready(function() {
+        $('#summernote').summernote();
+    });
+    </script>
 </body>
 </html>
