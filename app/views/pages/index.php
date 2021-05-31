@@ -51,7 +51,7 @@
     <?php foreach ($data as $row):?>
     <div class="d-flex justify-content-center">
     <div class="card" style="width: 10vh   height:10 vh ">
-    <img src="../public/img/imageblog.webp"class="card-img-top" width=300vh height=300vh    alt="...">
+    <img id="wow" src="../public/img/<?php echo $row->image ?>" width= "20px"   height="300px "class="card-img-top">
    <div class="card-body" >
     <h5 class="card-title"><?php echo $row->titre;?></h5>
     
