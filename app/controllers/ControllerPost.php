@@ -70,7 +70,7 @@
 
 public function uploadPhoto($image)
 {    
-  $dir = "C:\\xampp\htdocs\\exempl\public\img";    
+  $dir = "C:\\xampp\htdocs\\Blog\public\img";    
  //  $time = time();   
    $name = str_replace(' ','-',strtolower($_FILES["image"]["name"]));    
    $type = $_FILES["image"]["type"];       
