@@ -43,6 +43,17 @@ class AdminPost{
       $this->db->execute();
       return $db;
     }
-    
+    public function search_titre($data)
+    {
+      $this->db->query("SELECT * FROM post WHERE `titre`= :titre");
+      $this->db->bind(':titre' ,$data['titre']);
+      $db =$this->db->resultSet();
+      if($db){
+        return $db;
+      }else{
+        return false;
+      }
+    }
+ 
 }
     ?>
