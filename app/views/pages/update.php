@@ -16,6 +16,10 @@
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">contexte</label>
     <textarea id="summernote" name="contexte" style="padding: 5px 5px 30px 10px;height: 200px;border-radius: 5px;outline: none;width: 76rem;border-color: #cacaca;"><?php echo $data->contexte; ?></textarea>
+    <div class="form-group">
+              <label for="">Image</label>
+              <input type="file"  name="image">
+      </div>
     </div>
   <button type="submit"  name="submit" class="btn btn-outline-success">Submit</button>
 </form>
