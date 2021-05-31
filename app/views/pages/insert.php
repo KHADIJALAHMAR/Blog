@@ -5,9 +5,9 @@
     <div class="col">
       <input type="text" class="form-control" name="titre" placeholder="titre">
     </div>
-    <div class="col">
-      <input type="text" class="form-control"  name="contexte" placeholder="contexte">
-    </div>
+    <div class="container">
+        <textarea  id="summernote"  name="contexte" style="padding: 5px 5px 30px 10px;height: 200px;border-radius: 5px;outline: none;width: 76rem;border-color: #cacaca;"></textarea>
+      </div>
     <div class="form-group">
               <label for="">Image</label>
               <input type="file"  name="image">
