@@ -13,29 +13,34 @@
       $this->view('pages/index', $result);
     }
 
-   public function insert()
-   {
-   if (isset($_POST["submit"])) {
-     $data=[
-    'titre' =>$_POST['titre'],
-    'contexte' => $_POST['contexte'],
+    public function insert()
+    {
+    if (isset($_POST["submit"])) {
+     $image=$_FILES['image']['tmp_name'];
+      $data=[
+     'titre' =>$_POST['titre'],
+     'contexte' => $_POST['contexte'],
+     'image' => $_FILES['image']['name'],
      
-     ];
-     $this->model->addPost($data);
-    header('location:'.URLROOT .'/ControllerPost/index');
+      ];
+      if($this->uploadPhoto($image)===true){
+       if( $this->model->addPost($data) ){
+         
+         header('location:'.URLROOT .'/ControllerPost/index');
+         
+      } else{
+         die('Something went wrong');
+      }
+   }else{
+      die('Something went wrong');
    }
-   
-     $this->view('pages/insert');
-   }
-   public function delete()
-   {
-     $params=[
-       'id'=>$_GET['id']
-     ];
-    $this->model->deletPost($params); 
-       header('location:'.URLROOT.'/' . '/ControllerPost/index');
-    // echo $_GET['id'];
-   }
+ 
+ 
+     
+    }
+    
+      $this->view('pages/insert');
+    }
 
 
    public function update($id)
