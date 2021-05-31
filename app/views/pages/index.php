@@ -11,24 +11,26 @@
   <video id="Mp4Video-1590159698427" class="myVideo1" src="../public/img/bgvideo2.mp4"  loop="" muted="muted" playsinline="" autoplay="" style="width: 99vw; opacity: 1;"></video>
 </div>
 </header>
-<!-- RS de roman -->
+<!-- RS de Article-->
 <div class="d-flex justify-content-center">
-<div class="card mb-3-" style="max-width: 540px; " style="margin-auto">
-    <div class="row g-0">
-      <div class="col-md-4">
-        <img src="../public/img/cov.jpg" alt="...">
-      </div>
-      <div class="col-md-8">
-        <div class="card-body">
-          <h5 class="card-title">ROMAN,  ROMAN AUTOBIOGRAPHIQUE</h5>
-          <p class="card-text">Ce livre est l'histoire de mes mensonges. Sans doute est-ce le plus risqué
-                              que j'écrirai jamais. Il m'est vital.
-                              Jusqu'où suis-je allé dans l'aveu? Je n'ai pris aucun ménagement.
-                              Un jour, il faut bien déchirer le voile,
-                              rompre avec le comédien et coïncider avec soi.</p>
+<div class="bs-example">
+    <div class="card" style="max-width: 500px;">
+        <div class="row no-gutters">
+            <div class="col-sm-5" style="background: #868e96;">
+                <img src="public/img/h.webp" class="card-img-top h-100" alt="imageX">
+            </div>
+            <div class="col-sm-7">
+                <div class="card-body">
+                    <h1 class="card-title">Alice Liddel</h1>
+                    <p class="card-text">Bienvenue sur le blog de cuisine d'e-monsite !
+                          Ce blog est un site de démonstration qui regroupe des recettes de cuisine
+                          issues de la communauté d'utlisateurs d'e-monsite. Le module blog permet
+                          de créer autant d'articles que vous.</p>
+                    <a href="#" class="btn btn-primary stretched-link">View Profile</a>
+                </div>
+            </div>
         </div>
-      </div>
-  </div>
+    </div>
 </div>
 </div>
 <!-- search -->
@@ -40,7 +42,7 @@
       </form>
       <div class="text-danger"><?php if(isset($errdata['error_search'])){ echo $errdata['error_search']; } ?></div>
       </div>
-<!-- icons update -->
+<!-- icons insert -->
 <a href="<?php echo URLROOT; ?>/ControllerPost/insert"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"  margin-right="100"fill="currentColor" class="bi bi-plus-square-fill" viewBox="0 0 16 16" >
   <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 4.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3a.5.5 0 0 1 1 0z"/>
 </svg></a>
