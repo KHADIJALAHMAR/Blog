@@ -19,18 +19,12 @@ class AdminPost{
     public function addPost($data)
     
     {
-   $this->db->query("INSERT INTO `post`( `titre`, `contexte`) VALUES (:titre,:contexte)");
+   $this->db->query("INSERT INTO `post`( `titre`, `contexte`,`image`) VALUES (:titre,:contexte,:image)");
     $this->db->bind(':titre', $data['titre']);
     $this->db->bind(':contexte', $data['contexte']);
+    $this->db->bind(':image', $data['image']);
     $exucute_data=$this->db->execute();
     return $exucute_data;
-    }
-    public function deletPost($params)
-    {
-      $this->db->query("DELETE FROM`post` WHERE `id` = :id");
-      $this->db->bind(':id',$params['id']);
-      $this->db->execute();
-     return  $db;
     }
 
     public function getPostbyId($id){
