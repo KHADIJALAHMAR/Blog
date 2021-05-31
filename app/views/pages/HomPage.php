@@ -27,3 +27,12 @@
     </div>
 </div>
 </div>
+                        <!-- search -->
+                        <div class="container">
+      <form action="<?php echo URLROOT; ?>/ControllerPost/search"method="POST">
+            <label for="">search</label>
+            <input type="text" name="search">
+            <input type="submit" name="submit" >
+      </form>
+      <div class="text-red"><?php if(isset($errdata['error_search'])){ echo $errdata['error_search']; } ?></div>
+      </div>
