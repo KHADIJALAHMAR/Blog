@@ -1,6 +1,6 @@
 <?php require APPROOT . '/views/inc/header.php'; ?>
 <body>
-<form action="<?php echo URLROOT; ?>/ControllerPost/insert" method="POST">
+<form class="container" action="<?php echo URLROOT; ?>/ControllerPost/insert" method="POST">
   <div class="form-row">
     <div class="col">
       <input type="text" class="form-control" name="titre" placeholder="titre">
@@ -16,7 +16,6 @@
         <input type="submit" class="btn btn-primary" value="enter" name="submit">
         </div>
   </div>
-  <?php require APPROOT . '/views/inc/footer.php'; ?>
 </form>
 <script>
      $(document).ready(function() {
